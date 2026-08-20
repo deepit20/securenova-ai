@@ -20,8 +20,14 @@
         "version": "2.6.2",
         "cells": [
           {
-            "position": { "x": 140, "y": 90 },
-            "size": { "width": 215, "height": 700 },
+            "position": {
+              "x": 140,
+              "y": 90
+            },
+            "size": {
+              "width": 215,
+              "height": 700
+            },
             "attrs": {
               "label": {
                 "text": "USER LAYER (Trust Boundary)"
@@ -42,8 +48,14 @@
             }
           },
           {
-            "position": { "x": 375, "y": 90 },
-            "size": { "width": 260, "height": 700 },
+            "position": {
+              "x": 375,
+              "y": 90
+            },
+            "size": {
+              "width": 260,
+              "height": 700
+            },
             "attrs": {
               "label": {
                 "text": "AGENT LAYER\n(Trust Boundary)"
@@ -64,8 +76,14 @@
             }
           },
           {
-            "position": { "x": 655, "y": 90 },
-            "size": { "width": 215, "height": 700 },
+            "position": {
+              "x": 655,
+              "y": 90
+            },
+            "size": {
+              "width": 215,
+              "height": 700
+            },
             "attrs": {
               "label": {
                 "text": "INTERNAL API LAYER\n(Trust Boundary)"
@@ -86,8 +104,14 @@
             }
           },
           {
-            "position": { "x": 185, "y": 180 },
-            "size": { "width": 125, "height": 90 },
+            "position": {
+              "x": 185,
+              "y": 180
+            },
+            "size": {
+              "width": 125,
+              "height": 90
+            },
             "attrs": {
               "text": {
                 "text": "Auth0\nIdentity Provider\n(OIDC / OAuth 2.0)"
@@ -114,8 +138,14 @@
             }
           },
           {
-            "position": { "x": 185, "y": 565 },
-            "size": { "width": 125, "height": 90 },
+            "position": {
+              "x": 185,
+              "y": 565
+            },
+            "size": {
+              "width": 125,
+              "height": 90
+            },
             "attrs": {
               "text": {
                 "text": "Human User\n(Authenticated User)"
@@ -142,8 +172,14 @@
             }
           },
           {
-            "position": { "x": 405, "y": 185 },
-            "size": { "width": 60, "height": 60 },
+            "position": {
+              "x": 405,
+              "y": 185
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
             "attrs": {
               "text": {
                 "text": "OAuth M2M Client\n(Client Credentials\nFlow)"
@@ -170,8 +206,14 @@
             }
           },
           {
-            "position": { "x": 545, "y": 185 },
-            "size": { "width": 60, "height": 60 },
+            "position": {
+              "x": 545,
+              "y": 185
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
             "attrs": {
               "text": {
                 "text": "LLM API Key\n(Model Provider\nAccess Key)"
@@ -198,8 +240,14 @@
             }
           },
           {
-            "position": { "x": 475, "y": 450 },
-            "size": { "width": 60, "height": 60 },
+            "position": {
+              "x": 475,
+              "y": 450
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
             "attrs": {
               "text": {
                 "text": "AI Agent\n(LLM Powered)"
@@ -290,8 +338,14 @@
             }
           },
           {
-            "position": { "x": 415, "y": 645 },
-            "size": { "width": 50, "height": 50 },
+            "position": {
+              "x": 415,
+              "y": 645
+            },
+            "size": {
+              "width": 50,
+              "height": 50
+            },
             "attrs": {
               "text": {
                 "text": "RAG Pipeline\nService Identity"
@@ -318,8 +372,14 @@
             }
           },
           {
-            "position": { "x": 550, "y": 645 },
-            "size": { "width": 50, "height": 50 },
+            "position": {
+              "x": 550,
+              "y": 645
+            },
+            "size": {
+              "width": 50,
+              "height": 50
+            },
             "attrs": {
               "text": {
                 "text": "MCP Server\nIdentity"
@@ -346,8 +406,14 @@
             }
           },
           {
-            "position": { "x": 695, "y": 420 },
-            "size": { "width": 130, "height": 90 },
+            "position": {
+              "x": 695,
+              "y": 420
+            },
+            "size": {
+              "width": 130,
+              "height": 90
+            },
             "attrs": {
               "text": {
                 "text": "Internal REST APIs\n(Business APIs)"
@@ -374,8 +440,14 @@
             }
           },
           {
-            "position": { "x": 735, "y": 555 },
-            "size": { "width": 50, "height": 50 },
+            "position": {
+              "x": 735,
+              "y": 555
+            },
+            "size": {
+              "width": 50,
+              "height": 50
+            },
             "attrs": {
               "text": {
                 "text": "RAG Pipeline\nService Identity"
@@ -402,8 +474,14 @@
             }
           },
           {
-            "position": { "x": 735, "y": 665 },
-            "size": { "width": 50, "height": 50 },
+            "position": {
+              "x": 735,
+              "y": 665
+            },
+            "size": {
+              "width": 50,
+              "height": 50
+            },
             "attrs": {
               "text": {
                 "text": "MCP Server\nIdentity"
@@ -437,13 +515,29 @@
               "line": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "targetMarker": { "name": "block" },
-                "sourceMarker": { "name": "block" }
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                }
               }
             },
-            "labels": [{ "attrs": { "text": { "text": "Data Flow" } } }],
-            "source": { "cell": "actor-auth0" },
-            "target": { "cell": "actor-human-user" },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Data Flow"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "actor-auth0"
+            },
+            "target": {
+              "cell": "actor-human-user"
+            },
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
@@ -462,13 +556,32 @@
               "line": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "targetMarker": { "name": "block" }
+                "targetMarker": {
+                  "name": "block"
+                }
               }
             },
-            "labels": [{ "attrs": { "text": { "text": "Data Flow" } } }],
-            "source": { "cell": "actor-auth0" },
-            "target": { "cell": "proc-ai-agent" },
-            "vertices": [{ "x": 355, "y": 320 }],
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Data Flow"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "actor-auth0"
+            },
+            "target": {
+              "cell": "proc-ai-agent"
+            },
+            "vertices": [
+              {
+                "x": 355,
+                "y": 320
+              }
+            ],
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
@@ -486,13 +599,32 @@
               "line": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "targetMarker": { "name": "block" }
+                "targetMarker": {
+                  "name": "block"
+                }
               }
             },
-            "labels": [{ "attrs": { "text": { "text": "Data Flow" } } }],
-            "source": { "cell": "actor-human-user" },
-            "target": { "cell": "proc-ai-agent" },
-            "vertices": [{ "x": 355, "y": 570 }],
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Data Flow"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "actor-human-user"
+            },
+            "target": {
+              "cell": "proc-ai-agent"
+            },
+            "vertices": [
+              {
+                "x": 355,
+                "y": 570
+              }
+            ],
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
@@ -511,12 +643,26 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": "4,4",
-                "targetMarker": { "name": "block" }
+                "targetMarker": {
+                  "name": "block"
+                }
               }
             },
-            "labels": [{ "attrs": { "text": { "text": "Data Flow" } } }],
-            "source": { "cell": "proc-m2m-client" },
-            "target": { "cell": "proc-ai-agent" },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Data Flow"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "proc-m2m-client"
+            },
+            "target": {
+              "cell": "proc-ai-agent"
+            },
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
@@ -535,12 +681,26 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": "4,4",
-                "targetMarker": { "name": "block" }
+                "targetMarker": {
+                  "name": "block"
+                }
               }
             },
-            "labels": [{ "attrs": { "text": { "text": "Data Flow" } } }],
-            "source": { "cell": "proc-llm-key" },
-            "target": { "cell": "proc-ai-agent" },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Data Flow"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "proc-llm-key"
+            },
+            "target": {
+              "cell": "proc-ai-agent"
+            },
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
@@ -558,12 +718,26 @@
               "line": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "targetMarker": { "name": "block" }
+                "targetMarker": {
+                  "name": "block"
+                }
               }
             },
-            "labels": [{ "attrs": { "text": { "text": "Data Flow" } } }],
-            "source": { "cell": "proc-ai-agent" },
-            "target": { "cell": "proc-rag-agent-side" },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Data Flow"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "proc-ai-agent"
+            },
+            "target": {
+              "cell": "proc-rag-agent-side"
+            },
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
@@ -581,12 +755,26 @@
               "line": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "targetMarker": { "name": "block" }
+                "targetMarker": {
+                  "name": "block"
+                }
               }
             },
-            "labels": [{ "attrs": { "text": { "text": "Data Flow" } } }],
-            "source": { "cell": "proc-ai-agent" },
-            "target": { "cell": "proc-mcp-agent-side" },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Data Flow"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "proc-ai-agent"
+            },
+            "target": {
+              "cell": "proc-mcp-agent-side"
+            },
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
@@ -604,12 +792,26 @@
               "line": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "targetMarker": { "name": "block" }
+                "targetMarker": {
+                  "name": "block"
+                }
               }
             },
-            "labels": [{ "attrs": { "text": { "text": "Data Flow" } } }],
-            "source": { "cell": "proc-ai-agent" },
-            "target": { "cell": "proc-internal-apis" },
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "Data Flow"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "proc-ai-agent"
+            },
+            "target": {
+              "cell": "proc-internal-apis"
+            },
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
