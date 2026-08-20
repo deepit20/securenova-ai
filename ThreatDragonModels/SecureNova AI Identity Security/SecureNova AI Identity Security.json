@@ -55,7 +55,7 @@
           },
           {
             "position": {
-              "x": 400,
+              "x": 410,
               "y": 80
             },
             "size": {
@@ -80,8 +80,8 @@
               "crossingFlows": [
                 "flow-user-req",
                 "flow-id-token",
-                "flow-api-res",
-                "e893465b-02b6-4f1c-8321-7902b5d706fd"
+                "e893465b-02b6-4f1c-8321-7902b5d706fd",
+                "350e8b50-ad25-4ffc-b461-713db719994d"
               ],
               "containedElements": [
                 "proc-m2m-client",
@@ -95,7 +95,7 @@
           {
             "position": {
               "x": 900,
-              "y": 110
+              "y": 80
             },
             "size": {
               "width": 320,
@@ -117,8 +117,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "flow-api-res",
-                "e893465b-02b6-4f1c-8321-7902b5d706fd"
+                "e893465b-02b6-4f1c-8321-7902b5d706fd",
+                "350e8b50-ad25-4ffc-b461-713db719994d"
               ],
               "containedElements": [
                 "proc-internal-apis",
@@ -1632,67 +1632,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "6. API Response\n(Data)",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": true,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "boundary-agent-layer",
-                "boundary-internal-api-layer"
-              ]
-            },
-            "labels": [
-              "6. API Response\n(Data)"
-            ],
-            "id": "flow-api-res",
-            "source": {
-              "cell": "proc-internal-apis"
-            },
-            "target": {
-              "cell": "proc-ai-agent"
-            },
-            "vertices": [
-              {
-                "x": 830,
-                "y": 440
-              },
-              {
-                "x": 810,
-                "y": 510
-              },
-              {
-                "x": 780,
-                "y": 470
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "7. Knowledge\nRetrieval Request",
               "description": "",
               "outOfScope": false,
@@ -1926,7 +1865,7 @@
             },
             "vertices": [
               {
-                "x": 670,
+                "x": 650,
                 "y": 300
               }
             ]
@@ -1986,7 +1925,7 @@
               },
               {
                 "x": 740,
-                "y": 290
+                "y": 300
               },
               {
                 "x": 780,
@@ -2093,6 +2032,69 @@
               {
                 "x": 1072.5,
                 "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "6.API Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "boundary-agent-layer",
+                "boundary-internal-api-layer"
+              ]
+            },
+            "labels": [
+              "6.API Response"
+            ],
+            "id": "350e8b50-ad25-4ffc-b461-713db719994d",
+            "source": {
+              "cell": "proc-internal-apis",
+              "port": "2441b0d5-3956-4a64-8e25-eb17accf6d74"
+            },
+            "target": {
+              "cell": "proc-ai-agent",
+              "port": "68b8497c-dec7-43b0-b1a2-1b24889bedff"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": 370
+              },
+              {
+                "x": 820,
+                "y": 370
+              },
+              {
+                "x": 770,
+                "y": 400
               }
             ]
           }
