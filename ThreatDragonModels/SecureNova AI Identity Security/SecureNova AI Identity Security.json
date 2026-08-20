@@ -12,35 +12,29 @@
     "contributors": [],
     "diagrams": [
       {
-        "id": 3,
-        "title": "New STRIDE diagram",
+        "id": 1,
+        "title": "AI Identity Data-Flow Diagram",
         "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
+        "placeholder": "AI Identity Data-Flow Diagram",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
         "cells": [
           {
-            "position": {
-              "x": -190,
-              "y": 130
-            },
-            "size": {
-              "width": 460,
-              "height": 530
-            },
+            "position": { "x": 60, "y": 60 },
+            "size": { "width": 380, "height": 620 },
             "attrs": {
               "label": {
-                "text": "               USER LAYER (Trust Boundary)"
+                "text": "USER LAYER\n(Trust Boundary)"
               }
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "a29b4f3f-33cb-453b-be5d-4f5178629a71",
+            "id": "boundary-user-layer",
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "               USER LAYER (Trust Boundary)",
-              "description": "",
+              "name": "USER LAYER (Trust Boundary)",
+              "description": "User client space and authentication entry boundary.",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
@@ -48,169 +42,96 @@
             }
           },
           {
-            "position": {
-              "x": 610,
-              "y": 80
-            },
-            "size": {
-              "width": 460,
-              "height": 530
-            },
+            "position": { "x": 480, "y": 60 },
+            "size": { "width": 460, "height": 620 },
             "attrs": {
               "label": {
-                "text": "         AGENT LAYER (Trust Boundary)"
+                "text": "AGENT LAYER\n(Trust Boundary)"
               }
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "470bbeb8-94de-48bd-b73d-8a2af1074733",
+            "id": "boundary-agent-layer",
+            "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "         AGENT LAYER (Trust Boundary)",
-              "description": "",
+              "name": "AGENT LAYER (Trust Boundary)",
+              "description": "AI orchestration layer encompassing runtime agent identities, M2M credentials, and tool dispatchers.",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
               "containedElements": []
-            },
-            "zIndex": -1
+            }
           },
           {
-            "position": {
-              "x": 1132,
-              "y": 60.000000000001364
-            },
-            "size": {
-              "width": 460,
-              "height": 530
-            },
+            "position": { "x": 980, "y": 60 },
+            "size": { "width": 380, "height": 620 },
             "attrs": {
               "label": {
-                "text": "          INTERNAL API LAYER (Trust Boundary)"
+                "text": "INTERNAL API LAYER\n(Trust Boundary)"
               }
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "84ea619b-ce92-4bac-9572-6ce23d6c7783",
+            "id": "boundary-internal-api-layer",
+            "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "          INTERNAL API LAYER (Trust Boundary)",
-              "description": "",
+              "name": "INTERNAL API LAYER (Trust Boundary)",
+              "description": "Core backend business endpoints, downstream services, and retrieval engines.",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
               "containedElements": []
-            },
-            "zIndex": -1
+            }
           },
           {
-            "position": {
-              "x": 240,
-              "y": 470
-            },
-            "size": {
-              "width": 160,
-              "height": 60
-            },
+            "position": { "x": 140, "y": 140 },
+            "size": { "width": 220, "height": 80 },
             "attrs": {
               "text": {
-                "text": "Human User"
+                "text": "Auth0\nIdentity Provider\n(OIDC / OAuth 2.0)"
               },
               "body": {
                 "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
+                "strokeWidth": 1.5
               }
             },
             "visible": true,
             "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "a326e3cb-db85-49ee-ab63-7f54fd86b5b4"
-                },
-                {
-                  "group": "right",
-                  "id": "60200b7e-12ba-4130-ac8f-c6232de589b0"
-                },
-                {
-                  "group": "bottom",
-                  "id": "18a87062-1ebb-499d-ba16-750be98acb77"
-                },
-                {
-                  "group": "left",
-                  "id": "568efb22-fd5b-4a4c-8037-c40b4b478f35"
-                }
-              ]
-            },
-            "id": "39a87be7-a846-4fe6-8f24-339169c677cb",
+            "id": "actor-auth0",
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Human User \n(Authenticated User)",
+              "name": "Auth0 Identity Provider (OIDC / OAuth 2.0)",
+              "description": "Centralized OAuth 2.0 & OpenID Connect identity provider handling user token issuance.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": true,
+              "threats": []
+            }
+          },
+          {
+            "position": { "x": 140, "y": 480 },
+            "size": { "width": 220, "height": 80 },
+            "attrs": {
+              "text": {
+                "text": "Human User\n(Authenticated User)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "actor-human-user",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Human User (Authenticated User)",
               "description": "Authenticated human customer using the SecureNova AI customer service platform.",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -221,138 +142,229 @@
             }
           },
           {
-            "position": {
-              "x": 130,
-              "y": 295.00000000000136
-            },
-            "size": {
-              "width": 150,
-              "height": 60
-            },
+            "position": { "x": 520, "y": 140 },
+            "size": { "width": 110, "height": 80 },
             "attrs": {
               "text": {
-                "text": "1. Authentication\n Request"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "id": "831254ea-b61f-42b6-9f6d-08fe57538f7a",
-            "zIndex": 2,
-            "data": {
-              "type": "tm.Text",
-              "name": "1. Authentication\n Request",
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 343.75,
-              "y": 60.000000000001364
-            },
-            "size": {
-              "width": 240,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Auth0 \nIdentity Provider\n (OIDC / OAuth 2.0"
+                "text": "OAuth M2M Client\n(Client Credentials\nFlow)"
               },
               "body": {
                 "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
+                "strokeWidth": 1.5
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "proc-m2m-client",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "OAuth M2M Client (Client Credentials Flow)",
+              "description": "Machine-to-machine service client managing microservice credentials.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "privilegeLevel": "Delegated user",
+              "threats": []
+            }
+          },
+          {
+            "position": { "x": 780, "y": 140 },
+            "size": { "width": 110, "height": 80 },
+            "attrs": {
+              "text": {
+                "text": "LLM API Key\n(Model Provider\nAccess Key)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "proc-llm-key",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "LLM API Key (Model Provider Access Key)",
+              "description": "Secure storage/injection of model provider API keys.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "privilegeLevel": "Delegated user",
+              "threats": []
+            }
+          },
+          {
+            "position": { "x": 640, "y": 360 },
+            "size": { "width": 140, "height": 100 },
+            "attrs": {
+              "text": {
+                "text": "AI Agent\n(LLM Powered)"
+              },
+              "body": {
+                "stroke": "#c0392b",
+                "strokeWidth": 2
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "proc-ai-agent",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "AI Agent (LLM Powered)",
+              "description": "Non-human identity: OBO user JWT + constrained M2M client.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "privilegeLevel": "Delegated user",
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "threats": [
+                {
+                  "id": "threat-1",
+                  "title": "#1 Spoofed AI agent presents stolen OBO token",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "An attacker intercepts or replays a stolen On-Behalf-Of JWT to impersonate a legitimate user session via the AI agent.",
+                  "mitigation": "Enforce short-lived token lifetimes, sender-constrained tokens (DPoP/mTLS), and strict audience validation.",
+                  "number": 1
+                },
+                {
+                  "id": "threat-2",
+                  "title": "#2 RAG context or tool arguments tampered",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Adversarial prompt injection modifies context embeddings or function call arguments prior to tool invocation.",
+                  "mitigation": "Implement rigid JSON schema validation, input sanitation, and contextual guardrails.",
+                  "number": 2
+                },
+                {
+                  "id": "threat-3",
+                  "title": "#3 Missing non-human identity audit trail",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Actions taken autonomously by the AI agent cannot be definitively correlated to the originating human initiator.",
+                  "mitigation": "Correlate human session IDs with non-human M2M audit logs in tamper-proof immutable logging stores.",
+                  "number": 3
+                },
+                {
+                  "id": "threat-4",
+                  "title": "#4 Prompt injection discloses LLM API key",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "System prompt leakage or direct extraction attacks reveal backend API keys and model provider access tokens.",
+                  "mitigation": "Isolate API keys in secure backend orchestration layers; never pass raw credentials in model context.",
+                  "number": 4
+                },
+                {
+                  "id": "threat-5",
+                  "title": "#5 Unbounded tool loops exhaust quotas",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Malformed responses cause infinite recursive tool invocation loops, consuming downstream rate limits and API budgets.",
+                  "mitigation": "Set strict recursion step limits, global execution timeouts, and circuit breakers on all tool calls.",
+                  "number": 5
+                },
+                {
+                  "id": "threat-6",
+                  "title": "#6 Agent elevates to admin API scope",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A low-privileged user coerces the AI agent to invoke administrative internal APIs by abusing overly broad backend scopes.",
+                  "mitigation": "Apply principle of least privilege, strict RBAC/ABAC enforcement, and scope downscoped tokens at tool runtime.",
+                  "number": 6
+                }
+              ]
+            }
+          },
+          {
+            "position": { "x": 520, "y": 550 },
+            "size": { "width": 110, "height": 80 },
+            "attrs": {
+              "text": {
+                "text": "RAG Pipeline\nService Identity"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "proc-rag-agent-side",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "RAG Pipeline Service Identity",
+              "description": "Service credential representation for RAG retrieval operations.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "privilegeLevel": "Delegated user",
+              "threats": []
+            }
+          },
+          {
+            "position": { "x": 780, "y": 550 },
+            "size": { "width": 110, "height": 80 },
+            "attrs": {
+              "text": {
+                "text": "MCP Server\nIdentity"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "proc-mcp-agent-side",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "MCP Server Identity",
+              "description": "Model Context Protocol tool execution endpoint identity.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "privilegeLevel": "Delegated user",
+              "threats": []
+            }
+          },
+          {
+            "position": { "x": 1050, "y": 340 },
+            "size": { "width": 220, "height": 80 },
+            "attrs": {
+              "text": {
+                "text": "Internal REST APIs\n(Business APIs)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5
               }
             },
             "visible": true,
             "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "a326e3cb-db85-49ee-ab63-7f54fd86b5b4"
-                },
-                {
-                  "group": "right",
-                  "id": "60200b7e-12ba-4130-ac8f-c6232de589b0"
-                },
-                {
-                  "group": "bottom",
-                  "id": "18a87062-1ebb-499d-ba16-750be98acb77"
-                },
-                {
-                  "group": "left",
-                  "id": "568efb22-fd5b-4a4c-8037-c40b4b478f35"
-                }
-              ]
-            },
-            "id": "d40b3d17-6cd4-4fee-b4a5-e0740c743bae",
-            "zIndex": 3,
+            "id": "proc-internal-apis",
+            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Auth0 \nIdentity Provider\n (OIDC / OAuth 2.0",
-              "description": "",
+              "name": "Internal REST APIs (Business APIs)",
+              "description": "Core enterprise microservices exposing business domain operations.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -362,142 +374,282 @@
             }
           },
           {
-            "position": {
-              "x": 420,
-              "y": 365
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
+            "position": { "x": 1105, "y": 450 },
+            "size": { "width": 110, "height": 80 },
             "attrs": {
               "text": {
-                "text": "2. Authentication \nResponse \n(ID Token / Access Token)"
+                "text": "RAG Pipeline\nService Identity"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5
               }
             },
             "visible": true,
-            "shape": "td-text-block",
-            "id": "175b06ef-efd9-4eb1-8840-9cf35dc69505",
-            "zIndex": 4,
+            "shape": "process",
+            "id": "proc-rag-internal-side",
+            "zIndex": 2,
             "data": {
-              "type": "tm.Text",
-              "name": "2. Authentication \nResponse \n(ID Token / Access Token)",
-              "hasOpenThreats": false
+              "type": "tm.Process",
+              "name": "RAG Pipeline Service Identity",
+              "description": "Internal enterprise knowledge base indexing and retrieval pipeline.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "privilegeLevel": "Delegated user",
+              "threats": []
+            }
+          },
+          {
+            "position": { "x": 1105, "y": 560 },
+            "size": { "width": 110, "height": 80 },
+            "attrs": {
+              "text": {
+                "text": "MCP Server\nIdentity"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "proc-mcp-internal-side",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "MCP Server Identity",
+              "description": "Backend tool host exposing secured operational capabilities.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "privilegeLevel": "Delegated user",
+              "threats": []
             }
           },
           {
             "shape": "flow",
+            "id": "flow-1",
             "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
             },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
+            "labels": [{ "attrs": { "text": { "text": "1. Authentication Request" } } }],
+            "source": { "cell": "actor-human-user" },
+            "target": { "cell": "actor-auth0" },
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
+              "name": "1. Authentication Request",
+              "description": "End user initiates OIDC login flow with credentials.",
               "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "41ef73c3-d3e9-42a7-bb49-77760cb92ff3",
-            "source": {
-              "x": 810,
-              "y": 200
-            },
-            "target": {
-              "x": 880,
-              "y": 540
-            },
-            "vertices": [
-              {
-                "x": 821,
-                "y": 300
-              }
-            ]
+              "isEncrypted": true,
+              "threats": []
+            }
           },
           {
             "shape": "flow",
+            "id": "flow-2",
             "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
             },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
+            "labels": [{ "attrs": { "text": { "text": "2. Authentication Response (ID Token / Access Token)" } } }],
+            "source": { "cell": "actor-auth0" },
+            "target": { "cell": "actor-human-user" },
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
+              "name": "2. Authentication Response (ID Token / Access Token)",
+              "description": "Auth0 returns signed JWT identity and access tokens to user.",
               "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-3",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
             },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "491662c7-adc6-4baa-8082-25f108546abf",
-            "source": {
-              "x": 302,
-              "y": 214
+            "labels": [{ "attrs": { "text": { "text": "3. User Request (Chat / Action)" } } }],
+            "source": { "cell": "actor-human-user" },
+            "target": { "cell": "proc-ai-agent" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "3. User Request (Chat / Action)",
+              "description": "User sends natural language prompts or action intents accompanied by user context.",
+              "isTrustBoundary": true,
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-4",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
             },
-            "target": {
-              "x": 402,
-              "y": 314
+            "labels": [{ "attrs": { "text": "4. ID Token / Identity Claims (JWT)" } }],
+            "source": { "cell": "actor-auth0" },
+            "target": { "cell": "proc-ai-agent" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "4. ID Token / Identity Claims (JWT)",
+              "description": "Delegated user identity claims passed to agent runtime for verification.",
+              "isTrustBoundary": true,
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-m2m",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "strokeDasharray": "5,5", "targetMarker": { "name": "block" } }
             },
-            "vertices": [
-              {
-                "x": 380,
-                "y": 314
-              },
-              {
-                "x": 430,
-                "y": 220
-              }
-            ]
+            "labels": [{ "attrs": { "text": { "text": "M2M Client Credentials / Access Token" } } }],
+            "source": { "cell": "proc-m2m-client" },
+            "target": { "cell": "proc-ai-agent" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "M2M Client Credentials / Access Token",
+              "description": "Scoped M2M application credentials supplied to agent for microservice operations.",
+              "isTrustBoundary": false,
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-llm-key",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "strokeDasharray": "5,5", "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "LLM API Key" } } }],
+            "source": { "cell": "proc-llm-key" },
+            "target": { "cell": "proc-ai-agent" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "LLM API Key",
+              "description": "Direct injection of model access secret into the execution engine.",
+              "isTrustBoundary": false,
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-5",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "5. API Request + Access Token" } } }],
+            "source": { "cell": "proc-ai-agent" },
+            "target": { "cell": "proc-internal-apis" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "5. API Request + Access Token",
+              "description": "Agent dispatches enterprise REST operations using downstream scoped bearer token.",
+              "isTrustBoundary": true,
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-6",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "6. API Response (Data)" } } }],
+            "source": { "cell": "proc-internal-apis" },
+            "target": { "cell": "proc-ai-agent" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "6. API Response (Data)",
+              "description": "Internal business services return requested domain payload to the agent.",
+              "isTrustBoundary": true,
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-7",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "7. Knowledge Retrieval Request" } } }],
+            "source": { "cell": "proc-ai-agent" },
+            "target": { "cell": "proc-rag-agent-side" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "7. Knowledge Retrieval Request",
+              "description": "Query vectors and search parameters sent to RAG retriever.",
+              "isTrustBoundary": false,
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-8",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "8. Retrieved RAG Chunks" } } }],
+            "source": { "cell": "proc-rag-agent-side" },
+            "target": { "cell": "proc-ai-agent" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "8. Retrieved RAG Chunks",
+              "description": "Top-k semantic document chunks returned for prompt grounding.",
+              "isTrustBoundary": false,
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-9",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "9. MCP Tool Invoke" } } }],
+            "source": { "cell": "proc-ai-agent" },
+            "target": { "cell": "proc-mcp-agent-side" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "9. MCP Tool Invoke",
+              "description": "Standardized MCP call containing function parameters and context.",
+              "isTrustBoundary": false,
+              "isEncrypted": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-10",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "10. Tool Response" } } }],
+            "source": { "cell": "proc-mcp-agent-side" },
+            "target": { "cell": "proc-ai-agent" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "10. Tool Response",
+              "description": "Execution result returned from MCP server back to agent reasoning loop.",
+              "isTrustBoundary": false,
+              "isEncrypted": true,
+              "threats": []
+            }
           }
         ]
       }
     ],
-    "diagramTop": 4,
+    "diagramTop": 1,
     "reviewer": "Capstone Reviewer",
-    "threatTop": 0
+    "threatTop": 6
   }
 }
