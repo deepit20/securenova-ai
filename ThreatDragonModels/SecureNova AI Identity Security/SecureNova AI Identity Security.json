@@ -20,17 +20,11 @@
         "version": "2.6.2",
         "cells": [
           {
-            "position": {
-              "x": 140,
-              "y": 90
-            },
-            "size": {
-              "width": 215,
-              "height": 700
-            },
+            "position": { "x": 60, "y": 70 },
+            "size": { "width": 320, "height": 600 },
             "attrs": {
               "label": {
-                "text": "USER LAYER (Trust Boundary)"
+                "text": "USER LAYER\n(Trust Boundary)"
               }
             },
             "visible": true,
@@ -48,14 +42,8 @@
             }
           },
           {
-            "position": {
-              "x": 375,
-              "y": 90
-            },
-            "size": {
-              "width": 260,
-              "height": 700
-            },
+            "position": { "x": 410, "y": 70 },
+            "size": { "width": 460, "height": 600 },
             "attrs": {
               "label": {
                 "text": "AGENT LAYER\n(Trust Boundary)"
@@ -76,14 +64,8 @@
             }
           },
           {
-            "position": {
-              "x": 655,
-              "y": 90
-            },
-            "size": {
-              "width": 215,
-              "height": 700
-            },
+            "position": { "x": 900, "y": 70 },
+            "size": { "width": 320, "height": 600 },
             "attrs": {
               "label": {
                 "text": "INTERNAL API LAYER\n(Trust Boundary)"
@@ -104,14 +86,8 @@
             }
           },
           {
-            "position": {
-              "x": 185,
-              "y": 180
-            },
-            "size": {
-              "width": 125,
-              "height": 90
-            },
+            "position": { "x": 125, "y": 170 },
+            "size": { "width": 180, "height": 85 },
             "attrs": {
               "text": {
                 "text": "Auth0\nIdentity Provider\n(OIDC / OAuth 2.0)"
@@ -127,7 +103,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Auth0 Identity Provider (OIDC / OAuth 2.0)",
+              "name": "Auth0\nIdentity Provider\n(OIDC / OAuth 2.0)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -138,14 +114,8 @@
             }
           },
           {
-            "position": {
-              "x": 185,
-              "y": 565
-            },
-            "size": {
-              "width": 125,
-              "height": 90
-            },
+            "position": { "x": 125, "y": 470 },
+            "size": { "width": 180, "height": 80 },
             "attrs": {
               "text": {
                 "text": "Human User\n(Authenticated User)"
@@ -161,7 +131,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Human User (Authenticated User)",
+              "name": "Human User\n(Authenticated User)",
               "description": "Authenticated human customer using the SecureNova AI customer service platform.",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -172,14 +142,8 @@
             }
           },
           {
-            "position": {
-              "x": 405,
-              "y": 185
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
+            "position": { "x": 465, "y": 155 },
+            "size": { "width": 80, "height": 80 },
             "attrs": {
               "text": {
                 "text": "OAuth M2M Client\n(Client Credentials\nFlow)"
@@ -195,7 +159,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "OAuth M2M Client (Client Credentials Flow)",
+              "name": "OAuth M2M Client\n(Client Credentials\nFlow)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -206,14 +170,8 @@
             }
           },
           {
-            "position": {
-              "x": 545,
-              "y": 185
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
+            "position": { "x": 700, "y": 155 },
+            "size": { "width": 80, "height": 80 },
             "attrs": {
               "text": {
                 "text": "LLM API Key\n(Model Provider\nAccess Key)"
@@ -229,7 +187,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "LLM API Key (Model Provider Access Key)",
+              "name": "LLM API Key\n(Model Provider\nAccess Key)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -240,21 +198,15 @@
             }
           },
           {
-            "position": {
-              "x": 475,
-              "y": 450
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
+            "position": { "x": 585, "y": 355 },
+            "size": { "width": 90, "height": 90 },
             "attrs": {
               "text": {
                 "text": "AI Agent\n(LLM Powered)"
               },
               "body": {
                 "stroke": "#c0392b",
-                "strokeWidth": 2
+                "strokeWidth": 2.5
               }
             },
             "visible": true,
@@ -263,8 +215,8 @@
             "zIndex": 3,
             "data": {
               "type": "tm.Process",
-              "name": "AI Agent (LLM Powered)",
-              "description": "Non-human identity: OBO user JWT + constrained M2M client.",
+              "name": "AI Agent\n(LLM Powered)",
+              "description": "Non-human identity: OBO user\nJWT + constrained M2M client.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -280,8 +232,8 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Spoofing",
-                  "description": "An attacker intercepts or replays a stolen On-Behalf-Of JWT to impersonate a legitimate user session via the AI agent.",
-                  "mitigation": "Enforce short-lived token lifetimes, sender-constrained tokens (DPoP/mTLS), and strict audience validation.",
+                  "description": "Spoofed AI agent presents stolen OBO token",
+                  "mitigation": "Enforce short-lived OBO tokens with sender-constrained proof of possession.",
                   "number": 1
                 },
                 {
@@ -290,8 +242,8 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Tampering",
-                  "description": "Adversarial prompt injection modifies context embeddings or function call arguments prior to tool invocation.",
-                  "mitigation": "Implement rigid JSON schema validation, input sanitation, and contextual guardrails.",
+                  "description": "RAG context or tool arguments tampered",
+                  "mitigation": "Sign and validate contextual embeddings and function call payloads.",
                   "number": 2
                 },
                 {
@@ -300,8 +252,8 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "Actions taken autonomously by the AI agent cannot be definitively correlated to the originating human initiator.",
-                  "mitigation": "Correlate human session IDs with non-human M2M audit logs in tamper-proof immutable logging stores.",
+                  "description": "Missing non-human identity audit trail",
+                  "mitigation": "Correlate human user sessions with M2M agent service audit records.",
                   "number": 3
                 },
                 {
@@ -310,8 +262,8 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
-                  "description": "System prompt leakage or direct extraction attacks reveal backend API keys and model provider access tokens.",
-                  "mitigation": "Isolate API keys in secure backend orchestration layers; never pass raw credentials in model context.",
+                  "description": "Prompt injection discloses LLM API key",
+                  "mitigation": "Isolate API keys in backend secret managers; never expose credentials to the context window.",
                   "number": 4
                 },
                 {
@@ -320,8 +272,8 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Malformed responses cause infinite recursive tool invocation loops, consuming downstream rate limits and API budgets.",
-                  "mitigation": "Set strict recursion step limits, global execution timeouts, and circuit breakers on all tool calls.",
+                  "description": "Unbounded tool loops exhaust quotas",
+                  "mitigation": "Enforce recursion depth limits, call timeouts, and tool invocation budgets.",
                   "number": 5
                 },
                 {
@@ -330,22 +282,16 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Elevation of privilege",
-                  "description": "A low-privileged user coerces the AI agent to invoke administrative internal APIs by abusing overly broad backend scopes.",
-                  "mitigation": "Apply principle of least privilege, strict RBAC/ABAC enforcement, and scope downscoped tokens at tool runtime.",
+                  "description": "Agent elevates to admin API scope",
+                  "mitigation": "Implement fine-grained scoped tokens with least privilege principle.",
                   "number": 6
                 }
               ]
             }
           },
           {
-            "position": {
-              "x": 415,
-              "y": 645
-            },
-            "size": {
-              "width": 50,
-              "height": 50
-            },
+            "position": { "x": 475, "y": 560 },
+            "size": { "width": 80, "height": 80 },
             "attrs": {
               "text": {
                 "text": "RAG Pipeline\nService Identity"
@@ -361,7 +307,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "RAG Pipeline Service Identity",
+              "name": "RAG Pipeline\nService Identity",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -372,14 +318,8 @@
             }
           },
           {
-            "position": {
-              "x": 550,
-              "y": 645
-            },
-            "size": {
-              "width": 50,
-              "height": 50
-            },
+            "position": { "x": 700, "y": 560 },
+            "size": { "width": 80, "height": 80 },
             "attrs": {
               "text": {
                 "text": "MCP Server\nIdentity"
@@ -395,7 +335,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "MCP Server Identity",
+              "name": "MCP Server\nIdentity",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -406,14 +346,8 @@
             }
           },
           {
-            "position": {
-              "x": 695,
-              "y": 420
-            },
-            "size": {
-              "width": 130,
-              "height": 90
-            },
+            "position": { "x": 965, "y": 355 },
+            "size": { "width": 185, "height": 75 },
             "attrs": {
               "text": {
                 "text": "Internal REST APIs\n(Business APIs)"
@@ -429,7 +363,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Internal REST APIs (Business APIs)",
+              "name": "Internal REST APIs\n(Business APIs)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -440,14 +374,8 @@
             }
           },
           {
-            "position": {
-              "x": 735,
-              "y": 555
-            },
-            "size": {
-              "width": 50,
-              "height": 50
-            },
+            "position": { "x": 1020, "y": 450 },
+            "size": { "width": 75, "height": 75 },
             "attrs": {
               "text": {
                 "text": "RAG Pipeline\nService Identity"
@@ -463,7 +391,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "RAG Pipeline Service Identity",
+              "name": "RAG Pipeline\nService Identity",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -474,14 +402,8 @@
             }
           },
           {
-            "position": {
-              "x": 735,
-              "y": 665
-            },
-            "size": {
-              "width": 50,
-              "height": 50
-            },
+            "position": { "x": 1020, "y": 560 },
+            "size": { "width": 75, "height": 75 },
             "attrs": {
               "text": {
                 "text": "MCP Server\nIdentity"
@@ -497,7 +419,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "MCP Server Identity",
+              "name": "MCP Server\nIdentity",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -509,82 +431,58 @@
           },
           {
             "shape": "flow",
-            "id": "flow-auth-vertical",
+            "id": "flow-auth-req",
             "connector": "smooth",
             "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                }
-              }
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
             },
-            "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": "Data Flow"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "actor-auth0"
-            },
-            "target": {
-              "cell": "actor-human-user"
-            },
+            "labels": [{ "attrs": { "text": { "text": "1. Authentication\nRequest" } } }],
+            "source": { "cell": "actor-human-user" },
+            "target": { "cell": "actor-auth0" },
+            "vertices": [{ "x": 170, "y": 360 }],
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "1. Authentication\nRequest",
               "description": "",
               "isTrustBoundary": false,
-              "isBidirectional": true,
               "isEncrypted": false,
               "threats": []
             }
           },
           {
             "shape": "flow",
-            "id": "flow-auth0-to-agent",
+            "id": "flow-auth-res",
             "connector": "smooth",
             "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "targetMarker": {
-                  "name": "block"
-                }
-              }
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
             },
-            "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": "Data Flow"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "actor-auth0"
-            },
-            "target": {
-              "cell": "proc-ai-agent"
-            },
-            "vertices": [
-              {
-                "x": 355,
-                "y": 320
-              }
-            ],
+            "labels": [{ "attrs": { "text": { "text": "2. Authentication\nResponse\n(ID Token / Access Token)" } } }],
+            "source": { "cell": "actor-auth0" },
+            "target": { "cell": "actor-human-user" },
+            "vertices": [{ "x": 260, "y": 360 }],
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "2. Authentication\nResponse\n(ID Token / Access Token)",
+              "description": "",
+              "isTrustBoundary": false,
+              "isEncrypted": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-user-req",
+            "connector": "smooth",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "3. User Request\n(Chat / Action)" } } }],
+            "source": { "cell": "actor-human-user" },
+            "target": { "cell": "proc-ai-agent" },
+            "vertices": [{ "x": 420, "y": 485 }],
+            "data": {
+              "type": "tm.Flow",
+              "name": "3. User Request\n(Chat / Action)",
               "description": "",
               "isTrustBoundary": true,
               "isEncrypted": false,
@@ -593,41 +491,18 @@
           },
           {
             "shape": "flow",
-            "id": "flow-user-to-agent",
+            "id": "flow-id-token",
             "connector": "smooth",
             "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "targetMarker": {
-                  "name": "block"
-                }
-              }
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
             },
-            "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": "Data Flow"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "actor-human-user"
-            },
-            "target": {
-              "cell": "proc-ai-agent"
-            },
-            "vertices": [
-              {
-                "x": 355,
-                "y": 570
-              }
-            ],
+            "labels": [{ "attrs": { "text": { "text": "4. ID Token /\nIdentity Claims\n(JWT)" } } }],
+            "source": { "cell": "actor-auth0" },
+            "target": { "cell": "proc-ai-agent" },
+            "vertices": [{ "x": 420, "y": 280 }],
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "4. ID Token /\nIdentity Claims\n(JWT)",
               "description": "",
               "isTrustBoundary": true,
               "isEncrypted": false,
@@ -636,36 +511,17 @@
           },
           {
             "shape": "flow",
-            "id": "flow-m2m-to-agent",
+            "id": "flow-m2m",
             "connector": "smooth",
             "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": "4,4",
-                "targetMarker": {
-                  "name": "block"
-                }
-              }
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "strokeDasharray": "4,4", "targetMarker": { "name": "block" } }
             },
-            "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": "Data Flow"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "proc-m2m-client"
-            },
-            "target": {
-              "cell": "proc-ai-agent"
-            },
+            "labels": [{ "attrs": { "text": { "text": "M2M Client\nCredentials /\nAccess Token" } } }],
+            "source": { "cell": "proc-m2m-client" },
+            "target": { "cell": "proc-ai-agent" },
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "M2M Client\nCredentials /\nAccess Token",
               "description": "",
               "isTrustBoundary": false,
               "isEncrypted": false,
@@ -674,36 +530,17 @@
           },
           {
             "shape": "flow",
-            "id": "flow-llm-to-agent",
+            "id": "flow-llm-key",
             "connector": "smooth",
             "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": "4,4",
-                "targetMarker": {
-                  "name": "block"
-                }
-              }
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "strokeDasharray": "4,4", "targetMarker": { "name": "block" } }
             },
-            "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": "Data Flow"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "proc-llm-key"
-            },
-            "target": {
-              "cell": "proc-ai-agent"
-            },
+            "labels": [{ "attrs": { "text": { "text": "LLM API Key" } } }],
+            "source": { "cell": "proc-llm-key" },
+            "target": { "cell": "proc-ai-agent" },
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "LLM API Key",
               "description": "",
               "isTrustBoundary": false,
               "isEncrypted": false,
@@ -712,111 +549,156 @@
           },
           {
             "shape": "flow",
-            "id": "flow-agent-to-rag",
+            "id": "flow-api-req",
             "connector": "smooth",
             "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "targetMarker": {
-                  "name": "block"
-                }
-              }
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
             },
-            "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": "Data Flow"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "proc-ai-agent"
-            },
-            "target": {
-              "cell": "proc-rag-agent-side"
-            },
+            "labels": [{ "attrs": { "text": { "text": "5. API Request +\nAccess Token" } } }],
+            "source": { "cell": "proc-ai-agent" },
+            "target": { "cell": "proc-internal-apis" },
+            "vertices": [{ "x": 820, "y": 375 }],
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "isTrustBoundary": false,
-              "isEncrypted": false,
-              "threats": []
-            }
-          },
-          {
-            "shape": "flow",
-            "id": "flow-agent-to-mcp",
-            "connector": "smooth",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "targetMarker": {
-                  "name": "block"
-                }
-              }
-            },
-            "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": "Data Flow"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "proc-ai-agent"
-            },
-            "target": {
-              "cell": "proc-mcp-agent-side"
-            },
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "isTrustBoundary": false,
-              "isEncrypted": false,
-              "threats": []
-            }
-          },
-          {
-            "shape": "flow",
-            "id": "flow-agent-to-apis",
-            "connector": "smooth",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "targetMarker": {
-                  "name": "block"
-                }
-              }
-            },
-            "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": "Data Flow"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "proc-ai-agent"
-            },
-            "target": {
-              "cell": "proc-internal-apis"
-            },
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "5. API Request +\nAccess Token",
               "description": "",
               "isTrustBoundary": true,
+              "isEncrypted": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-api-res",
+            "connector": "smooth",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "6. API Response\n(Data)" } } }],
+            "source": { "cell": "proc-internal-apis" },
+            "target": { "cell": "proc-ai-agent" },
+            "vertices": [{ "x": 820, "y": 420 }],
+            "data": {
+              "type": "tm.Flow",
+              "name": "6. API Response\n(Data)",
+              "description": "",
+              "isTrustBoundary": true,
+              "isEncrypted": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-rag-req",
+            "connector": "smooth",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "7. Knowledge\nRetrieval Request" } } }],
+            "source": { "cell": "proc-ai-agent" },
+            "target": { "cell": "proc-rag-agent-side" },
+            "vertices": [{ "x": 510, "y": 470 }],
+            "data": {
+              "type": "tm.Flow",
+              "name": "7. Knowledge\nRetrieval Request",
+              "description": "",
+              "isTrustBoundary": false,
+              "isEncrypted": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-rag-res",
+            "connector": "smooth",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "8. Retrieved\nRAG Chunks" } } }],
+            "source": { "cell": "proc-rag-agent-side" },
+            "target": { "cell": "proc-ai-agent" },
+            "vertices": [{ "x": 570, "y": 500 }],
+            "data": {
+              "type": "tm.Flow",
+              "name": "8. Retrieved\nRAG Chunks",
+              "description": "",
+              "isTrustBoundary": false,
+              "isEncrypted": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-mcp-req",
+            "connector": "smooth",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "9. MCP Tool\nInvoke" } } }],
+            "source": { "cell": "proc-ai-agent" },
+            "target": { "cell": "proc-mcp-agent-side" },
+            "vertices": [{ "x": 680, "y": 470 }],
+            "data": {
+              "type": "tm.Flow",
+              "name": "9. MCP Tool\nInvoke",
+              "description": "",
+              "isTrustBoundary": false,
+              "isEncrypted": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-mcp-res",
+            "connector": "smooth",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "labels": [{ "attrs": { "text": { "text": "10. Tool\nResponse" } } }],
+            "source": { "cell": "proc-mcp-agent-side" },
+            "target": { "cell": "proc-ai-agent" },
+            "vertices": [{ "x": 620, "y": 510 }],
+            "data": {
+              "type": "tm.Flow",
+              "name": "10. Tool\nResponse",
+              "description": "",
+              "isTrustBoundary": false,
+              "isEncrypted": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-internal-api-to-rag",
+            "connector": "smooth",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "source": { "cell": "proc-internal-apis" },
+            "target": { "cell": "proc-rag-internal-side" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "isTrustBoundary": false,
+              "isEncrypted": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-internal-rag-to-mcp",
+            "connector": "smooth",
+            "attrs": {
+              "line": { "stroke": "#333333", "strokeWidth": 1.5, "targetMarker": { "name": "block" } }
+            },
+            "source": { "cell": "proc-rag-internal-side" },
+            "target": { "cell": "proc-mcp-internal-side" },
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "isTrustBoundary": false,
               "isEncrypted": false,
               "threats": []
             }
