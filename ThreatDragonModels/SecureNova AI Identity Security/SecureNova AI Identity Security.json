@@ -18,7 +18,336 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 65,
+              "y": 60.000000000001364
+            },
+            "size": {
+              "width": 460,
+              "height": 530
+            },
+            "attrs": {
+              "label": {
+                "text": "               USER LAYER (Trust Boundary)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "a29b4f3f-33cb-453b-be5d-4f5178629a71",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "               USER LAYER (Trust Boundary)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "29d72215-132b-48b5-8568-3fc9d5bd3245",
+                "39a87be7-a846-4fe6-8f24-339169c677cb"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 610,
+              "y": 80
+            },
+            "size": {
+              "width": 460,
+              "height": 530
+            },
+            "attrs": {
+              "label": {
+                "text": "AGENT LAYER (Trust Boundary)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "470bbeb8-94de-48bd-b73d-8a2af1074733",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "AGENT LAYER (Trust Boundary)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "zIndex": -1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 1132,
+              "y": 60.000000000001364
+            },
+            "size": {
+              "width": 460,
+              "height": 530
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "84ea619b-ce92-4bac-9572-6ce23d6c7783",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "zIndex": -1
+          },
+          {
+            "position": {
+              "x": 210,
+              "y": 160.00000000000017
+            },
+            "size": {
+              "width": 170,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Auth0 Identity Provider \n(OIDC / OAuth 2.0)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a326e3cb-db85-49ee-ab63-7f54fd86b5b4"
+                },
+                {
+                  "group": "right",
+                  "id": "60200b7e-12ba-4130-ac8f-c6232de589b0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "18a87062-1ebb-499d-ba16-750be98acb77"
+                },
+                {
+                  "group": "left",
+                  "id": "568efb22-fd5b-4a4c-8037-c40b4b478f35"
+                }
+              ]
+            },
+            "id": "29d72215-132b-48b5-8568-3fc9d5bd3245",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Auth0 Identity Provider \n(OIDC / OAuth 2.0)",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": true,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 220,
+              "y": 410
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Human User \n(Authenticated User)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a326e3cb-db85-49ee-ab63-7f54fd86b5b4"
+                },
+                {
+                  "group": "right",
+                  "id": "60200b7e-12ba-4130-ac8f-c6232de589b0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "18a87062-1ebb-499d-ba16-750be98acb77"
+                },
+                {
+                  "group": "left",
+                  "id": "568efb22-fd5b-4a4c-8037-c40b4b478f35"
+                }
+              ]
+            },
+            "id": "39a87be7-a846-4fe6-8f24-339169c677cb",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Human User \n(Authenticated User)",
+              "description": "Authenticated human customer using the SecureNova AI customer service platform.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 4,
