@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 65,
-              "y": 60.000000000001364
+              "x": -190,
+              "y": 130
             },
             "size": {
               "width": 460,
@@ -44,10 +44,7 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
-              "containedElements": [
-                "29d72215-132b-48b5-8568-3fc9d5bd3245",
-                "39a87be7-a846-4fe6-8f24-339169c677cb"
-              ]
+              "containedElements": []
             }
           },
           {
@@ -61,7 +58,7 @@
             },
             "attrs": {
               "label": {
-                "text": "AGENT LAYER (Trust Boundary)"
+                "text": "         AGENT LAYER (Trust Boundary)"
               }
             },
             "visible": true,
@@ -69,21 +66,14 @@
             "id": "470bbeb8-94de-48bd-b73d-8a2af1074733",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "AGENT LAYER (Trust Boundary)",
+              "name": "         AGENT LAYER (Trust Boundary)",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
               "containedElements": []
             },
-            "zIndex": -1,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "zIndex": -1
           },
           {
             "position": {
@@ -96,7 +86,7 @@
             },
             "attrs": {
               "label": {
-                "text": "Trust Boundary"
+                "text": "          INTERNAL API LAYER (Trust Boundary)"
               }
             },
             "visible": true,
@@ -104,7 +94,7 @@
             "id": "84ea619b-ce92-4bac-9572-6ce23d6c7783",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "          INTERNAL API LAYER (Trust Boundary)",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -115,125 +105,8 @@
           },
           {
             "position": {
-              "x": 210,
-              "y": 160.00000000000017
-            },
-            "size": {
-              "width": 170,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Auth0 Identity Provider \n(OIDC / OAuth 2.0)"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "a326e3cb-db85-49ee-ab63-7f54fd86b5b4"
-                },
-                {
-                  "group": "right",
-                  "id": "60200b7e-12ba-4130-ac8f-c6232de589b0"
-                },
-                {
-                  "group": "bottom",
-                  "id": "18a87062-1ebb-499d-ba16-750be98acb77"
-                },
-                {
-                  "group": "left",
-                  "id": "568efb22-fd5b-4a4c-8037-c40b4b478f35"
-                }
-              ]
-            },
-            "id": "29d72215-132b-48b5-8568-3fc9d5bd3245",
-            "zIndex": 0,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Auth0 Identity Provider \n(OIDC / OAuth 2.0)",
-              "description": "",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": true,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 220,
-              "y": 410
+              "x": 240,
+              "y": 470
             },
             "size": {
               "width": 160,
@@ -241,7 +114,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Human User \n(Authenticated User)"
+                "text": "Human User"
               },
               "body": {
                 "stroke": "#333333",
@@ -346,6 +219,279 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 130,
+              "y": 295.00000000000136
+            },
+            "size": {
+              "width": 150,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "1. Authentication\n Request"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "831254ea-b61f-42b6-9f6d-08fe57538f7a",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Text",
+              "name": "1. Authentication\n Request",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 343.75,
+              "y": 60.000000000001364
+            },
+            "size": {
+              "width": 240,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Auth0 \nIdentity Provider\n (OIDC / OAuth 2.0"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a326e3cb-db85-49ee-ab63-7f54fd86b5b4"
+                },
+                {
+                  "group": "right",
+                  "id": "60200b7e-12ba-4130-ac8f-c6232de589b0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "18a87062-1ebb-499d-ba16-750be98acb77"
+                },
+                {
+                  "group": "left",
+                  "id": "568efb22-fd5b-4a4c-8037-c40b4b478f35"
+                }
+              ]
+            },
+            "id": "d40b3d17-6cd4-4fee-b4a5-e0740c743bae",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Auth0 \nIdentity Provider\n (OIDC / OAuth 2.0",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 420,
+              "y": 365
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "2. Authentication \nResponse \n(ID Token / Access Token)"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "175b06ef-efd9-4eb1-8840-9cf35dc69505",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Text",
+              "name": "2. Authentication \nResponse \n(ID Token / Access Token)",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "41ef73c3-d3e9-42a7-bb49-77760cb92ff3",
+            "source": {
+              "x": 810,
+              "y": 200
+            },
+            "target": {
+              "x": 880,
+              "y": 540
+            },
+            "vertices": [
+              {
+                "x": 821,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "491662c7-adc6-4baa-8082-25f108546abf",
+            "source": {
+              "x": 302,
+              "y": 214
+            },
+            "target": {
+              "x": 402,
+              "y": 314
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 314
+              },
+              {
+                "x": 430,
+                "y": 220
+              }
+            ]
           }
         ]
       }
